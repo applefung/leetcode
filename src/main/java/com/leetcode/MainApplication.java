@@ -7,8 +7,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MainApplication {
 
 	public static void main(String[] args) {
-		RemoveDuplicateLetters x = new RemoveDuplicateLetters();
-		System.out.println(x.removeDuplicateLetters("bcabc"));
+		TwoSum x = new TwoSum();
+		int[] answer = x.twoSum(new int[]{3,2,4}, 6);
+		for(int i: answer) {
+			System.out.println(i);
+		}
 		SpringApplication.run(MainApplication.class, args);
 	}
 

@@ -7,8 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MainApplication {
 
 	public static void main(String[] args) {
-		LongestPalindrome x = new LongestPalindrome();
-		String size = x.longestPalindrome("aaaaa");
+		IsPalindrome x = new IsPalindrome();
+		boolean size = x.isPalindrome(1001);
 		System.out.println("result==="+size);
 		SpringApplication.run(MainApplication.class, args);
 	}

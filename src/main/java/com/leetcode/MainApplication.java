@@ -7,8 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MainApplication {
 
 	public static void main(String[] args) {
-		FindMedianSortedArrays x = new FindMedianSortedArrays();
-		double size = x.findMedianSortedArrays(new int[]{1,3}, new int[]{2,3});
+		LongestPalindrome x = new LongestPalindrome();
+		String size = x.longestPalindrome("aaaaa");
 		System.out.println("result==="+size);
 		SpringApplication.run(MainApplication.class, args);
 	}

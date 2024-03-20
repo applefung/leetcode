@@ -7,8 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MainApplication {
 
 	public static void main(String[] args) {
-		IsPalindrome x = new IsPalindrome();
-		boolean size = x.isPalindrome(1001);
+		LongestCommonPrefix x = new LongestCommonPrefix();
+		String size = x.longestCommonPrefix(new String[]{"flower","flower","flower","flower"});
 		System.out.println("result==="+size);
 		SpringApplication.run(MainApplication.class, args);
 	}

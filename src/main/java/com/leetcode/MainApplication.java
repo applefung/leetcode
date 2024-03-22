@@ -7,9 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MainApplication {
 
 	public static void main(String[] args) {
-		FindTheIndexOfTheFirstOccurrenceInAString x = new FindTheIndexOfTheFirstOccurrenceInAString();
+		SearchInsert x = new SearchInsert();
 
-		int size = x.strStr("mississippi", "issip");
+		int size = x.searchInsert(new int[]{1,3,5,6}, 2);
 		System.out.println("result==>"+size);
 		SpringApplication.run(MainApplication.class, args);
 	}

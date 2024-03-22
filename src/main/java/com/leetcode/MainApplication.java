@@ -7,10 +7,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MainApplication {
 
 	public static void main(String[] args) {
-		SearchInsert x = new SearchInsert();
+		AddBinary x = new AddBinary();
 
-		int size = x.searchInsert(new int[]{1,3,5,6}, 2);
-		System.out.println("result==>"+size);
+		String size = x.addBinary("100", "110010");
+		System.out.println("result===>" + size);
 		SpringApplication.run(MainApplication.class, args);
 	}
 

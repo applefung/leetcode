@@ -7,10 +7,14 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MainApplication {
 
 	public static void main(String[] args) {
-		AddBinary x = new AddBinary();
+		MergeSortedArray x = new MergeSortedArray();
+		int[] a = new int[]{4,5,6,0,0,0};
+		int[] b = new int[]{2,5,6};
+		x.merge(a, 3, b,  3);
+		for(int i=0; i<a.length; i++) {
+			System.out.println("result===>" + a[i]);
+		}
 
-		String size = x.addBinary("100", "110010");
-		System.out.println("result===>" + size);
 		SpringApplication.run(MainApplication.class, args);
 	}
 

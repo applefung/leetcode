@@ -7,10 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MainApplication {
 
 	public static void main(String[] args) {
-		IsSameTree x = new IsSameTree();
-		TreeNode p = new TreeNode(10,  new TreeNode(5), new TreeNode(15));
-		TreeNode q = new TreeNode(1, new TreeNode(5, null, null), new TreeNode(15, null, new TreeNode(3)));
-		boolean result = x.isSameTree(p, q);
+		MaximumDepthOfBinaryTree x = new MaximumDepthOfBinaryTree();
+		TreeNode p = new TreeNode(-8,  new TreeNode(-6, new TreeNode(6, null, new TreeNode(5)), null), new TreeNode(7, null, null));
+		int result = x.maxDepth(p);
 		System.out.println("result==>"+result);
 
 		SpringApplication.run(MainApplication.class, args);

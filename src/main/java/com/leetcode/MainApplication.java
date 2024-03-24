@@ -7,13 +7,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MainApplication {
 
 	public static void main(String[] args) {
-		MergeSortedArray x = new MergeSortedArray();
-		int[] a = new int[]{4,5,6,0,0,0};
-		int[] b = new int[]{2,5,6};
-		x.merge(a, 3, b,  3);
-		for(int i=0; i<a.length; i++) {
-			System.out.println("result===>" + a[i]);
-		}
+		IsSameTree x = new IsSameTree();
+		TreeNode p = new TreeNode(10,  new TreeNode(5), new TreeNode(15));
+		TreeNode q = new TreeNode(1, new TreeNode(5, null, null), new TreeNode(15, null, new TreeNode(3)));
+		boolean result = x.isSameTree(p, q);
+		System.out.println("result==>"+result);
 
 		SpringApplication.run(MainApplication.class, args);
 	}

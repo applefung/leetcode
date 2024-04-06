@@ -9,8 +9,8 @@ import java.util.List;
 public class MainApplication {
 
 	public static void main(String[] args) {
-		BestTimeToBuyAndSellStock p = new BestTimeToBuyAndSellStock();
-		int result = p.maxProfit(new int[] {7,1,5,3,6,4});
+		SingleNumber p = new SingleNumber();
+		int result = p.singleNumber(new int[]{4,1,2,1,2});
 		System.out.println("result==>"+result);
 
 		SpringApplication.run(MainApplication.class, args);

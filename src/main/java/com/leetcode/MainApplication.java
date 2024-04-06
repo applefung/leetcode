@@ -9,8 +9,8 @@ import java.util.List;
 public class MainApplication {
 
 	public static void main(String[] args) {
-		PascalsTriangle p = new PascalsTriangle();
-		List<List<Integer>> result = p.generate(5);
+		BestTimeToBuyAndSellStock p = new BestTimeToBuyAndSellStock();
+		int result = p.maxProfit(new int[] {7,1,5,3,6,4});
 		System.out.println("result==>"+result);
 
 		SpringApplication.run(MainApplication.class, args);

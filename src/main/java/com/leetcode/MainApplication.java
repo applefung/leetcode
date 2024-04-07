@@ -9,10 +9,8 @@ import java.util.List;
 public class MainApplication {
 
 	public static void main(String[] args) {
-		IntersectionOfTwoLinkedLists p = new IntersectionOfTwoLinkedLists();
-		ListNode a = new ListNode(4, new ListNode(1, new ListNode(8, new ListNode(4, new ListNode(5)))));
-		ListNode b = new ListNode(5, new ListNode(6, new ListNode(1, new ListNode(8, new ListNode(4, new ListNode(5))))));
-		ListNode result = p.getIntersectionNode(a, b);
+		ExcelSheetColumnTitle p = new ExcelSheetColumnTitle();
+		String result = p.convertToTitle(701);
 		System.out.println("result==>"+result);
 
 		SpringApplication.run(MainApplication.class, args);

@@ -9,8 +9,8 @@ import java.util.List;
 public class MainApplication {
 
 	public static void main(String[] args) {
-		ExcelSheetColumnTitle p = new ExcelSheetColumnTitle();
-		String result = p.convertToTitle(701);
+		ExcelSheetColumnNumber p = new ExcelSheetColumnNumber();
+		int result = p.titleToNumber("AAY");
 		System.out.println("result==>"+result);
 
 		SpringApplication.run(MainApplication.class, args);

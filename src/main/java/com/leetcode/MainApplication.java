@@ -9,8 +9,10 @@ import java.util.List;
 public class MainApplication {
 
 	public static void main(String[] args) {
-		SingleNumber p = new SingleNumber();
-		int result = p.singleNumber(new int[]{4,1,2,1,2});
+		IntersectionOfTwoLinkedLists p = new IntersectionOfTwoLinkedLists();
+		ListNode a = new ListNode(4, new ListNode(1, new ListNode(8, new ListNode(4, new ListNode(5)))));
+		ListNode b = new ListNode(5, new ListNode(6, new ListNode(1, new ListNode(8, new ListNode(4, new ListNode(5))))));
+		ListNode result = p.getIntersectionNode(a, b);
 		System.out.println("result==>"+result);
 
 		SpringApplication.run(MainApplication.class, args);

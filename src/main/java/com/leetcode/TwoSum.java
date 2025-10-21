@@ -1,28 +1,19 @@
 package com.leetcode;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 public class TwoSum {
     public int[] twoSum(int[] nums, int target) {
-        List<Integer> numsList = new ArrayList<>();
-        int[] answer = new int[2];
-        for(int i: nums) {
-            numsList.add(i);
-        }
-
-        for(int i= 0; i<nums.length; i++) {
-            int current = nums[i];
-            int complement = target - current;
-            int complementIndex = numsList.indexOf(complement);
-
-            if (numsList.contains(complement) && i != complementIndex) {
-                answer[0] = i;
-                answer[1] = complementIndex;
-                break;
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            int complement = target - nums[i];
+            if (map.containsKey(complement)) {
+                return new int[] {map.get(complement), i};
             }
+            map.put(nums[i], i);
         }
-        return answer;
+        return new int[] {};
     }
 
 }

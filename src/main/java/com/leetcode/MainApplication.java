@@ -7,8 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MainApplication {
 
 	public static void main(String[] args) {
-        ThreeSum threeSum = new ThreeSum();
-        System.out.println(threeSum.threeSum(new int[] {-1,0,1,2,-1,-4}));
+        ContainerWithMostWater containerWithMostWater = new ContainerWithMostWater();
+        System.out.println(containerWithMostWater.maxArea(new int[] {1,2,3,1000,9}));
 		// SpringApplication.run(MainApplication.class, args);
 	}
 

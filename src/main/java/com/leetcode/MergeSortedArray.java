@@ -20,4 +20,22 @@ public class MergeSortedArray {
             nums1[i] = data.get(i);
         }
     }
+
+    // 2 pointer
+    public void merge2(int[] nums1, int m, int[] nums2, int n) {
+        int a = Math.max(0, m - 1);
+        int b = n - 1;
+        int i = nums1.length-1;
+        while(b>=0 && i>=0) {
+            if(a>=0 && m!=0 && nums1[a]>nums2[b]) {
+                nums1[i] = nums1[a];
+                a--;
+            }
+            else {
+                nums1[i] = nums2[b];
+                b--;
+            }
+            i--;
+        }
+    }
 }

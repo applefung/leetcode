@@ -1,10 +1,8 @@
 package com.leetcode;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 
 public class RemoveDuplicates {
+    // 2 pointer solution: slow and fast pointer
     public int removeDuplicates(int[] nums) {
         int j = 1;
         for (int i = 1; i < nums.length; i++) {

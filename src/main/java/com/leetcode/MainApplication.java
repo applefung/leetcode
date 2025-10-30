@@ -7,8 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MainApplication {
 
 	public static void main(String[] args) {
-        ContainerWithMostWater containerWithMostWater = new ContainerWithMostWater();
-        System.out.println(containerWithMostWater.maxArea(new int[] {1,2,3,1000,9}));
+        RemoveElement removeElement = new RemoveElement();
+        System.out.println(removeElement.removeElement2(new int[] {3,2,2,3}, 3));
 		// SpringApplication.run(MainApplication.class, args);
 	}
 

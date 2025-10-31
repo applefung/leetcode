@@ -15,6 +15,7 @@ public class MoveZeroes {
         }
     }
 
+    // 2 pointer 
     public void moveZeroes2(int[] nums) {
         int slow = 0;
         for(int i=0; i<nums.length; i++) {

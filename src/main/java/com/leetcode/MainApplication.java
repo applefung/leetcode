@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MainApplication {
 
 	public static void main(String[] args) {
-		MoveZeroes moveZeroes = new MoveZeroes();
-		moveZeroes.moveZeroes2(new int[]{1,0,1});
+		ReverseVowelsOfString reverseVowelsOfString = new ReverseVowelsOfString();
+		System.out.println(reverseVowelsOfString.reverseVowels("IceCreAm"));
 		// SpringApplication.run(MainApplication.class, args);
 	}
 

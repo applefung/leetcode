@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MainApplication {
 
 	public static void main(String[] args) {
-		IsSubsequence isSubsequence = new IsSubsequence();
-		System.out.println(isSubsequence.isSubsequence("abc", "ahbgdc"));
+		ReverseString3 reverseString = new ReverseString3();
+		System.out.println(reverseString.reverseWords("Let's take LeetCode contest"));
 		// SpringApplication.run(MainApplication.class, args);
 	}
 

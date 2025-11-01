@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MainApplication {
 
 	public static void main(String[] args) {
-		ReverseVowelsOfString reverseVowelsOfString = new ReverseVowelsOfString();
-		System.out.println(reverseVowelsOfString.reverseVowels("IceCreAm"));
+		IsSubsequence isSubsequence = new IsSubsequence();
+		System.out.println(isSubsequence.isSubsequence("abc", "ahbgdc"));
 		// SpringApplication.run(MainApplication.class, args);
 	}
 

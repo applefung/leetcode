@@ -1,14 +1,15 @@
 package com.leetcode;
 
+import java.util.Arrays;
+
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class MainApplication {
 
 	public static void main(String[] args) {
-		DuplicatedZeros duplicateZeros = new DuplicatedZeros();
-		duplicateZeros.duplicateZeros(new int[]{1,0,2,3,0,4,5,0});
-		// SpringApplication.run(MainApplication.class, args);
+		ApplyOperationsToAnArray applyOperationsToAnArray = new ApplyOperationsToAnArray();
+		int[] result = applyOperationsToAnArray.applyOperations(new int[]{1,2,2,1,1,0});
+		System.out.println("result: " + Arrays.toString(result));
 	}
-
 }

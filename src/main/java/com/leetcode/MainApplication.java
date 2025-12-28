@@ -8,8 +8,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MainApplication {
 
 	public static void main(String[] args) {
-		FlipSquareSubmatrixVertically minimumAverageOfSmallestAndLargestElements = new FlipSquareSubmatrixVertically();
-		int[][] result = minimumAverageOfSmallestAndLargestElements.reverseSubmatrix(new int[][]{{1,2,3,4},{5,6,7,8},{9,10,11,12},{13,14,15,16}}, 1, 0, 3);
-		System.out.println("result: " + Arrays.deepToString(result));
+		MaximumLengthSubstringWithTwoOccurrences longestEvenOddSubarrayWithThreshold = new MaximumLengthSubstringWithTwoOccurrences	();
+		int result = longestEvenOddSubarrayWithThreshold.maximumLengthSubstring("bcbbbcba");
+		System.out.println("result: " + result);
 	}
 }

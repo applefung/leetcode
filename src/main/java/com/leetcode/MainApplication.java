@@ -8,8 +8,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MainApplication {
 
 	public static void main(String[] args) {
-		ApplyOperationsToAnArray applyOperationsToAnArray = new ApplyOperationsToAnArray();
-		int[] result = applyOperationsToAnArray.applyOperations(new int[]{1,2,2,1,1,0});
-		System.out.println("result: " + Arrays.toString(result));
+		FlipSquareSubmatrixVertically minimumAverageOfSmallestAndLargestElements = new FlipSquareSubmatrixVertically();
+		int[][] result = minimumAverageOfSmallestAndLargestElements.reverseSubmatrix(new int[][]{{1,2,3,4},{5,6,7,8},{9,10,11,12},{13,14,15,16}}, 1, 0, 3);
+		System.out.println("result: " + Arrays.deepToString(result));
 	}
 }

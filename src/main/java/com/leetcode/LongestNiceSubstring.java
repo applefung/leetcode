@@ -38,4 +38,43 @@ public class LongestNiceSubstring {
         }
         return true;
     }
+
+    // sliding window approach
+    public static String longestNiceSubstring2(String s) {
+        if (s == null || s.length() == 0) {
+            return "";
+        }
+        
+        int maxLeft = 0;
+        int maxLength = 0;
+        
+        for (int left = 0; left < s.length(); left++) {
+            Set<Character> set = new HashSet<>();
+            for (int right = left; right < s.length(); right++) {
+                set.add(s.charAt(right));
+                
+                // Check if current window [left, right] is nice
+                if (isNiceWindow(set)) {
+                    int currentLength = right - left + 1;
+                    if (currentLength > maxLength) {
+                        maxLength = currentLength;
+                        maxLeft = left;
+                    }
+                }
+            }
+        }
+        
+        return maxLength > 0 ? s.substring(maxLeft, maxLeft + maxLength) : "";
+    }
+    
+    private static boolean isNiceWindow(Set<Character> set) {
+        for (Character c : set) {
+            char upper = Character.toUpperCase(c);
+            char lower = Character.toLowerCase(c);
+            if (!set.contains(upper) || !set.contains(lower)) {
+                return false;
+            }
+        }
+        return true;
+    }
 }

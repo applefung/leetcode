@@ -47,4 +47,44 @@ public class DefuseTheBomb {
         }
         return result;
     }
+
+    public int[] decrypt2(int[] code, int k) {
+        int[] result = new int[code.length];
+        // sliding window approach
+        if(k==0) {
+            for(int i=0; i<code.length; i++) {
+                result[i] = 0;
+            }
+        }
+        if(k>0) {
+            // init window
+            int sum = 0;
+            for(int i=0; i<k; i++) {
+                sum += code[i];
+            }
+            for(int i=0; i<code.length; i++) {
+                sum -= code[i];
+                // right pointer
+                int right = (i+k) % code.length;
+                sum += code[right];
+                result[i] = sum;
+            }
+        }
+        if(k<0) {
+            // init window
+            int sum = 0;
+            int absK = Math.abs(k);
+            for(int i=code.length-1; i>=code.length-absK; i--) {
+                sum += code[i];
+            }
+            for(int i=0; i<code.length; i++) {
+                result[i] = sum;
+                sum += code[i];
+                // left pointer
+                int left = (i -absK + code.length) % code.length;
+                sum -= code[left];
+            }
+        }
+        return result;
+    }
 }
